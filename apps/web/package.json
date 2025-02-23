@@ -1,0 +1,41 @@
+{
+  "name": "statements-web",
+  "type": "module",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": " astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/node": "^9.1.0",
+    "@astrojs/tailwind": "^6.0.0",
+    "@astrojs/vue": "^5.0.6",
+    "@preact/signals-core": "^1.6.0",
+    "@vee-validate/zod": "^4.12.6",
+    "@vueuse/core": "^10.9.0",
+    "astro": "^5.3.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lodash": "^4.17.21",
+    "lucide-vue-next": "^0.363.0",
+    "radix-vue": "^1.5.3",
+    "tailwind-merge": "^2.2.2",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.3.3",
+    "vee-validate": "^4.12.6",
+    "vue": "^3.4.21",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.4",
+    "@repo/types": "*",
+    "mongodb": "^6.13.0"
+  }
+}

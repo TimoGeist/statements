@@ -1,0 +1,20 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+export const prerender = false;
+import ResultView from "@/components/ui/ResultView.vue";
+const API_URL = import.meta.env.PUBLIC_API_URL;
+
+const res = await fetch(`${API_URL}/validations/${Astro.params.databaseId}`);
+const json = await res.json()
+const prettyModelName = json.modelOptions.id
+
+//const validations: Array<any> = await res.json();
+	
+//const prettyModelName = validations[0].modelOptions.id;
+//console.log(validations)
+//console.log(validations[0])
+---
+
+<MainLayout>
+	<ResultView client:only="vue" API_URL={API_URL} validation={json} prettyModelName={prettyModelName} />
+</MainLayout>

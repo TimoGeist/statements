@@ -1,0 +1,6 @@
+{
+  "name": "@repo/types",
+  "dependencies": {
+    "mongodb": "^6.13.1"
+  }
+}
